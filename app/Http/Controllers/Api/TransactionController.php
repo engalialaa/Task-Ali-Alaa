@@ -130,7 +130,7 @@ class TransactionController extends Controller
 
             return response()->json(["code"=>200,'data' => $transfer_operation],'200');
         }else{
-            return response()->json(["code"=>400,'message' => __('notification.User_Not_Found'),], 400);
+            return response()->json(["code"=>400,'message' => 'User Not Found',], 400);
         }//end if
     }//end of fun
 
@@ -142,7 +142,7 @@ class TransactionController extends Controller
 
             return response()->json(["code"=>200,'data' => $transfer_operation],'200');
         }else{
-            return response()->json(["code"=>400,'message' => __('notification.User_Not_Found'),], 400);
+            return response()->json(["code"=>400,'message' => '.User Not Found',], 400);
         }//end if
     }//end of fun
 
